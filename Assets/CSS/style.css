@@ -11,6 +11,11 @@ header{
     background: linear-gradient(to bottom, #ffb700, #ff8800);
     margin-bottom: 4em;
 }
+#div-img, #div-img img{
+  height: 128px;
+  width: 128px;
+  z-index: 1;
+}
 /* Possibilita deixa a lista no centro */
 nav{
     display: flex;
@@ -114,5 +119,14 @@ nav{
   transition: 0.5s;
 }
 #acesso:hover .desta{
+  color: #fff;
+}
+/* Footer */
+footer{
+  margin-top: 170px;
+  background: linear-gradient(to bottom, #ffb700, #ff8800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
 }

@@ -130,3 +130,110 @@ footer{
   align-items: center;
   color: #fff;
 }
+
+/* === Loja === */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  padding: 2em 10%;
+}
+
+.produto {
+  background: #fff;
+  border: 2px solid #ff8800;
+  border-radius: .5em;
+  padding: 1em;
+  text-align: center;
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: .5em;
+}
+
+.produto h2 {
+  margin: .5em 0;
+  color: #ff8800;
+}
+
+.produto details summary {
+  cursor: pointer;
+  color: #ff8800;
+  font-weight: bold;
+  margin-top: .5em;
+}
+
+.produto details p {
+  margin: .5em 0;
+}
+
+.produto details button {
+  margin-top: .5em;
+  padding: .5em 1em;
+  border: none;
+  border-radius: .5em;
+  background: #ff8800;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* === Contatos === */
+#conteudo .contatos {
+  padding: 2em 10%;
+  text-align: left;
+}
+
+.contatos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contatos li {
+  margin: .5em 0;
+  font-size: 1.1em;
+}
+
+.contatos i {
+  color: #ff8800;
+  margin-right: .5em;
+}
+
+/* === Ajuda === */
+#conteudo .ajuda {
+  padding: 2em 10%;
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.produto {
+  background: #fff;
+  border: 2px solid #ff8800;
+  border-radius: .5em;
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+details[open] {
+  animation: abrirDetalhes 0.3s ease-in-out;
+}
+
+@keyframes abrirDetalhes {
+  from {
+    opacity: 0;
+    transform: scaleY(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
